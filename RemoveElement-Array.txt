@@ -1,0 +1,5 @@
+    func removeElement(_ nums: inout [Int], _ val: Int) -> Int {
+      var result = nums.filter { $0 != val }
+      nums = result
+      return result.count
+    }

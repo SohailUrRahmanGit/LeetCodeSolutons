@@ -1,0 +1,8 @@
+    func findMedianSortedArrays(_ nums1: [Int], _ nums2: [Int]) -> Double {
+        let mergedArray = (nums1 + nums2).sorted(by : <)
+        let index =  (mergedArray.count) / 2
+        if ((mergedArray.count) % 2) == 0 {
+          return (Double(mergedArray[index] + mergedArray[index - 1]) / 2)
+        } else {
+              return Double(mergedArray[index])
+        }
