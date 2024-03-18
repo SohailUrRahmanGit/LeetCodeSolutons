@@ -1,0 +1,15 @@
+class Solution {
+    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+        var sumOf = [Int]()
+        for (index,ialue) in nums.enumerated() {
+            for (jndex,jalue) in nums.enumerated()
+            {
+                if ialue + jalue == target && index != jndex {
+                   sumOf = [index,jndex]
+                   break
+                }
+            }
+        }
+        return sumOf
+    }
+}
