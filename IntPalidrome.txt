@@ -1,0 +1,4 @@
+    func isPalindrome(_ x: Int) -> Bool {
+       var xA = Array(String(x))
+        return xA == xA.reversed()
+    }
