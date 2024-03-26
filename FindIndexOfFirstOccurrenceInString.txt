@@ -1,0 +1,7 @@
+    func strStr(_ haystack: String, _ needle: String) -> Int {
+       if let range = haystack.range(of: needle) {
+           let startIndex = haystack.distance(from: haystack.startIndex, to: range.lowerBound)
+           return startIndex
+       }
+        return -1
+    }
