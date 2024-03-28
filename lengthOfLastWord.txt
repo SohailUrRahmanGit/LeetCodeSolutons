@@ -1,0 +1,7 @@
+    func lengthOfLastWord(_ s: String) -> Int {
+       let words = s.split(separator: " ").map { String($0) }
+        if let laste = words.last {
+            return laste.count
+        }
+        return 0
+    }
